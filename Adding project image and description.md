@@ -1,6 +1,6 @@
 <h1> Conversor de Moedas </h1>
 
-<p> Uma ferramenta simples e eficaz para auxiliar a realizar conversões para diversas moedas. Em breve novas adições de moedas serão implementadas </p>
+<p> Uma ferramenta simples e eficaz para auxiliar a realizar conversões para diversas moedas. Em breve novas adições serão implementadas </p>
 <p> Caso o usuário tente realizar a conversão para mesma moeda ou esqueça de adiciona-las, é exbido um pop up alertando o mesmo </p>
 
 <h4> Tecnologias utilizadas na construção do projeto </h4>
