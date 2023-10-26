@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+    overflow: hidden;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#333232, #c7771c);
+  }
+  
+  
+  
+  main {
+    width: 300px;
+    background-color: #d4d4d4;
+    color: #ee9b01;
+    font-weight: 600;
+    border-radius: 35px;
+    margin: 50px auto;
+    padding: 44px 24px 23px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#1b1b1b9c, rgb(19, 18, 18));
+    padding: 18px;
+    width: 80%;
+    max-width: 300px;
+    box-shadow: -5px -5px 10px rgba(5, 5, 5, 0.1),
+      5px 3px 10px rgba(0, 0, 0, 0.89), inset -5px -5px 15px rgb(5, 5, 5),
+      inset 5px 10px 10px rgba(0, 0, 0, 0.795);
+  }
+  
+  label {
+    color: #ee9b01;
+    font-size: 17px;
+    font-weight: 700;
+  text-align: center;
+  
+  }
+  
+  select,
+  input {
+    border-radius: 15px;
+    border: 2px solid #6b6a6a;
+    background-color: #ee9b01;
+    height: 43px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: #000000;
+    transition: transform 0.6s ease;
+    text-align: center;
+  }
+  
+  button {
+    border-radius: 20px;
+    background: #ee9b01;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 45px;
+    border: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.6s ease;
+  }
+  
+  button:active {
+    transform: scale(0.9);
+  }
+  
+  
+  button:active {
+    opacity: 0.6;
+  }
+  
+  
+  select,
+  input:active {
+    transform: scale(0.9);
+  }
+  
+  section {
+    border-radius: 20px;
+    border: 3px solid #ee9b01;
+    margin-top: 36px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .seta {
+    margin: 15px;
+    width: 500px;
+  }
+  
+  .box-money {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .seta {
+    width: 50px;
+  }
+  
+  .money-text {
+    color: #000000;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .money-value,
+  money-value-to-convert {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+  
+  .seta {
+    opacity: 0.8;
+    width: 48px;
+  }
+  

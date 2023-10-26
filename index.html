@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Assent/icone-aba.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Currency Converter</title>
+  </head>
+
+  <body>
+    <main>
+      <label>
+        Converter <b>de</b>
+        <select id="SelectConvertFrom">
+          <option value="selectfrom">Selecione a moeda</option>
+          <option value="real">R$ Real</option>
+          <option value="dolar">US$ Dólar Americano</option>
+          <option value="bitcoin">₿ Bitcoin</option>
+          <option value="canadense">C$ Dolar Canadense</option>
+          <option value="euro">€ Euro</option>
+          <option value="libra">£ Libra</option>
+          <option value="franco">CHF Franco Suiço</option>
+        </select>
+      </label>
+
+      <label>
+        Converter <b>para</b>
+        <select id="SelectConvertTo">
+          <option value="selectto">Selecione a moeda</option>
+          <option value="real">R$ Real</option>
+          <option value="dolar">US$ Dólar Americano</option>
+          <option value="bitcoin">₿ Bitcoin</option>
+          <option value="canadense">C$ Dolar Canadense</option>
+          <option value="euro">€ Euro</option>
+          <option value="libra">£ Libra</option>
+          <option value="franco">CHF Franco Suiço</option>
+        </select>
+      </label>
+      <label>Valor</label>
+      <input
+        id="InputValue"
+        onkeypress="$(this).mask('###00.00', {reverse:true});"
+        placeholder="Digite o valor"
+      />
+      <button onclick="ConvertedValues()" class="convert-button">
+        Converter
+      </button>
+      <section>
+        <div class="box-money">
+          <img
+            id="ImageFrom"
+            src="./assets/real.png"
+            alt="logo-moeda-a-converter"
+          />
+          <p id="NameFrom">Real</p>
+          <p id="ConvertedValueFrom">R$ 0,00</p>
+        </div>
+
+        <img class="seta" src="assets/setabaixo.png" alt="seta-converter" />
+
+        <div class="box-money">
+          <img
+            id="ImageTo"
+            src="assets/dolar.png"
+            alt="logo-moeda-convertida"
+          />
+          <p id="NameTo">Dólar Americano</p>
+          <p id="ConvertedValueTo">US$ 0,00</p>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
