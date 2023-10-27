@@ -121,10 +121,33 @@ function ConvertedValues() {
 
   //REAL PARA DEMAIS MOEDAS//
 
+
   if (SelectConvertFrom.value == "real" && SelectConvertTo.value == "real") {
     Swal.fire({
       title: "Caro usuário",
       text: 'Não é possível realizar a conversão para a mesma moeda',
+      color: "#696969",
+      width: '330px',
+      height: "100px",
+      padding: '3px',
+      confirmButtonText: "Entendi",
+      timer: 7000,
+      timerProgressBar: true,
+      confirmButtonColor: "#ee9b01",
+      background: '#ffffff',
+      footer: 'Conversor de Moedas 2023 | Filipe',
+      imageUrl: "./assets/atencao.png", 
+      imageWidth: 200, 
+      imageHeight: 180,
+    
+    });
+  }
+
+
+  if (SelectConvertFrom.value == "real" && SelectConvertTo.value == "selectto") {
+    Swal.fire({
+      title: "Caro usuário",
+      text: 'Selecione a moeda no seletor abaixo para realizar a conversão',
       color: "#696969",
       width: '330px',
       height: "100px",
@@ -228,6 +251,28 @@ function ConvertedValues() {
 
   //DOLAR PARA DEMAIS MOEDAS//
 
+
+  if (SelectConvertFrom.value == "dolar" && SelectConvertTo.value == "selectto") {
+    Swal.fire({
+      title: "Caro usuário",
+      text: 'Selecione a moeda no seletor abaixo para realizar a conversão',
+      color: "#696969",
+      width: '330px',
+      height: "100px",
+      padding: '3px',
+      confirmButtonText: "Entendi",
+      timer: 7000,
+      timerProgressBar: true,
+      confirmButtonColor: "#ee9b01",
+      background: '#ffffff',
+      footer: 'Conversor de Moedas 2023 | Filipe',
+      imageUrl: "./assets/atencao.png", 
+      imageWidth: 200, 
+      imageHeight: 180,
+    
+    });
+  }
+
   if (SelectConvertFrom.value == "dolar" && SelectConvertTo.value == "real") {
     ConvertedValueFrom.innerHTML = "US$ " + InputValue;
     let conversao = (InputValue * dolartoday) / realtoday;
@@ -316,6 +361,28 @@ function ConvertedValues() {
   }
 
   //BITCOIN PARA DEMAIS MOEDAS//
+
+
+  if (SelectConvertFrom.value == "bitcoin" && SelectConvertTo.value == "selectto") {
+    Swal.fire({
+      title: "Caro usuário",
+      text: 'Selecione a moeda no seletor abaixo para realizar a conversão',
+      color: "#696969",
+      width: '330px',
+      height: "100px",
+      padding: '3px',
+      confirmButtonText: "Entendi",
+      timer: 7000,
+      timerProgressBar: true,
+      confirmButtonColor: "#ee9b01",
+      background: '#ffffff',
+      footer: 'Conversor de Moedas 2023 | Filipe',
+      imageUrl: "./assets/atencao.png", 
+      imageWidth: 200, 
+      imageHeight: 180,
+    
+    });
+  }
 
   if (SelectConvertFrom.value == "bitcoin" && SelectConvertTo.value == "real") {
     ConvertedValueFrom.innerHTML = "₿" + InputValue;
@@ -414,6 +481,29 @@ function ConvertedValues() {
   }
 
   //DOLAR CANADENSE PARA DEMAIS MOEDAS //
+
+  if (SelectConvertFrom.value == "canadense" && SelectConvertTo.value == "selectto") {
+    Swal.fire({
+      title: "Caro usuário",
+      text: 'Selecione a moeda no seletor abaixo para realizar a conversão',
+      color: "#696969",
+      width: '330px',
+      height: "100px",
+      padding: '3px',
+      confirmButtonText: "Entendi",
+      timer: 7000,
+      timerProgressBar: true,
+      confirmButtonColor: "#ee9b01",
+      background: '#ffffff',
+      footer: 'Conversor de Moedas 2023 | Filipe',
+      imageUrl: "./assets/atencao.png", 
+      imageWidth: 200, 
+      imageHeight: 180,
+    
+    });
+  }
+
+
 
   if (
     SelectConvertFrom.value == "canadense" &&
@@ -519,6 +609,29 @@ function ConvertedValues() {
 
   //EURO PARA DEMAIS MOEDAS//
 
+  if (SelectConvertFrom.value == "euro" && SelectConvertTo.value == "selectto") {
+    Swal.fire({
+      title: "Caro usuário",
+      text: 'Selecione a moeda no seletor abaixo para realizar a conversão',
+      color: "#696969",
+      width: '330px',
+      height: "100px",
+      padding: '3px',
+      confirmButtonText: "Entendi",
+      timer: 7000,
+      timerProgressBar: true,
+      confirmButtonColor: "#ee9b01",
+      background: '#ffffff',
+      footer: 'Conversor de Moedas 2023 | Filipe',
+      imageUrl: "./assets/atencao.png", 
+      imageWidth: 200, 
+      imageHeight: 180,
+    
+    });
+  }
+
+
+
   if (SelectConvertFrom.value == "euro" && SelectConvertTo.value == "real") {
     ConvertedValueFrom.innerHTML = "€" + InputValue;
     let conversao = (InputValue * eurotoday) / realtoday;
@@ -605,6 +718,28 @@ function ConvertedValues() {
   }
 
   //LIBRA PARA DEMAIS MOEDAS//
+
+  if (SelectConvertFrom.value == "libra" && SelectConvertTo.value == "selectto") {
+    Swal.fire({
+      title: "Caro usuário",
+      text: 'Selecione a moeda no seletor abaixo para realizar a conversão',
+      color: "#696969",
+      width: '330px',
+      height: "100px",
+      padding: '3px',
+      confirmButtonText: "Entendi",
+      timer: 7000,
+      timerProgressBar: true,
+      confirmButtonColor: "#ee9b01",
+      background: '#ffffff',
+      footer: 'Conversor de Moedas 2023 | Filipe',
+      imageUrl: "./assets/atencao.png", 
+      imageWidth: 200, 
+      imageHeight: 180,
+    
+    });
+  }
+
 
   if (SelectConvertFrom.value == "libra" && SelectConvertTo.value == "real") {
     ConvertedValueFrom.innerHTML = "£" + InputValue;
@@ -695,6 +830,30 @@ function ConvertedValues() {
   }
 
   //FRANCO SUIÇO PARA DEMAIS MOEDAS//
+
+
+  if (SelectConvertFrom.value == "franco" && SelectConvertTo.value == "selectto") {
+    Swal.fire({
+      title: "Caro usuário",
+      text: 'Selecione a moeda no seletor abaixo para realizar a conversão',
+      color: "#696969",
+      width: '330px',
+      height: "100px",
+      padding: '3px',
+      confirmButtonText: "Entendi",
+      timer: 7000,
+      timerProgressBar: true,
+      confirmButtonColor: "#ee9b01",
+      background: '#ffffff',
+      footer: 'Conversor de Moedas 2023 | Filipe',
+      imageUrl: "./assets/atencao.png", 
+      imageWidth: 200, 
+      imageHeight: 180,
+    
+    });
+  }
+
+
 
   if (SelectConvertFrom.value == "franco" && SelectConvertTo.value == "real") {
     ConvertedValueFrom.innerHTML = "Fr" + InputValue;
